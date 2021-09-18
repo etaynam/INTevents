@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d005eab2b6.js" crossorigin="anonymous"></script>
+    <title>תרגול אירועים | INT</title>
+</head>
+
+
+<body id="body">
+
+
+<!-- הדר של האתר -->
+
+    <header>
+    <div id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+<div id="menu">
+    <a href="#"><i class="fas fa-home"></i> דף הבית</a>
+    <a href="#"><i class="fas fa-question"></i> מי אני</a>
+    <a href="#"><i class="far fa-list-alt"></i> תיק עבודות</a>
+    <a href="#"><i class="fas fa-phone"></i> יצירת קשר</a>
+</div>
+    </header>
+
+
+ <!-- סגית החלק של ההדר -->
+
+
+    <main>
+
+ <!-- ההודעה שתופיע כאשר יגללו והפונקציה תופעל -->
+
+        <div class="stickymessage">
+
+            <h1 id="scrlAlert" style="display: none;"></h1>
+        </div>
+
+ <!-- ההודעה שתופיע כאשר יגללו והפונקציה תופעל -->
+
+
+
+ <!-- החלק העיקרי של האתר בו מופיע כל התוכן -->
+
+        <section id="welcome"> 
+
+<section class="registerform">
+
+<!-- כותרת ותת כותרת -->
+    <h1>היי! איזה כיף שבאתם!</h1>
+    <h2>אם הגעתם הנה, אתם בטח ממש רוצים להירשם לאתר היחיד בעולם שלא עושה כלום? אם כך אז קדימה, לכו על זה!</h2>
+<!-- כותרת ותת כותרת -->
+
+
+
+<!-- טופס ההרשמה -->
+
+    <form action="#" method="post" name="register"> 
+        <div>
+            <fieldset>
+                <label for=fname>שם מלא</label><br>
+                <input id="fname" class="inputstyle" type="text" name="fname"  placeholder="איך קוראים לך?" required>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <label for=email>דוא״ל</label><br>
+                <input id="email" class="inputstyle" type="email" name="email"  placeholder="כתובת הדוא״ל שלך" required>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <label for=phone >טלפון</label><br>
+                <input id="phone" class="inputstyle" type="number" name="phone"  placeholder="מה הטלפון שלך?" required>
+            </fieldset>
+        </div>
+        <p class="kid"> מה יש׳ך מה אתה ילד? </p>
+
+        <div class="age">
+            <fieldset>
+                <label for=age >מה השנתון שלך?</label><br>
+                <input id="age" class="inputstyle" type="number" name="age"  placeholder="מה השנתון שלך?" min="1" max="2021" required>
+            </fieldset>
+        </div>
+<!-- טופס ההרשמה -->
+
+
+
+<!-- כפתור ההרשמה והניקוי של הטופס -->
+        <div class="submitbtn">
+            <button class="submit" id="register" type="button" >
+                <i class="fas fa-arrow-left"></i>
+               סיימתי, הלאה!
+              </button> 
+              <button class="reset" id="reset" type="reset">
+                <i class="fas fa-window-close"></i>
+                תמחק טעיתי
+              </button> 
+            </div>
+
+<!-- כפתור ההרשמה והניקוי של הטופס -->
+</section>
+
+</section>
+
+
+
+<!-- אייקון שיופיע רק לגילאי 18 ויותר -->
+
+
+<div id="agechecked" style="display: none;">
+<img src="./links/18-01.png" alt="18+">
+</div>
+
+<!-- אייקון שיופיע רק לגילאי 18 ויותר -->
+
+
+
+    </main>
+
+
+<!-- האזור בו יופיע הפרטים לאחר שהיוזר ימלא את הפרטים שלו ושהפונקציה תופעל -->
+
+    <footer id="footer" style="display: none;">
+        <div class="image">
+            <img src="./links/animation_300_ktobmgor.gif" alt="אנימציית פרופיל">
+        </div>
+
+        <div class="userinfo">
+            <h1>תודה על הרשמתך!</h1>
+                    </div>
+
+        <div class="yourname">
+<div id="getname">שמך המלא הוא: </div>
+<div id="postname"></div>
+        </div>
+
+        <div class="yourphone">
+<div id="getphone">הטלפון שלך הוא:</div>
+<div id="postphone"></div>
+        </div>
+
+        <div class="youremai">
+<div id="getemail">כתוב הדוא״ל שלך היא:</div>
+<div id="postemail"></div>
+        </div>
+
+<!-- האזור בו יופיע הפרטים לאחר שהיוזר ימלא את הפרטים שלו ושהפונקציה תופעל -->
+
+
+<!-- כפתור הסגירה של הפוטר -->
+
+    <div class="closediv">
+        <button id="close">סגירה</button>
+    </div>
+    
+<script src="./scripts.js"></script>
+</body>
+</html>
